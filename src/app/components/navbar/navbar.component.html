@@ -2,7 +2,7 @@
   <mat-sidenav #sidenav class="sidenav" role="navigation" fixedInViewport="true">
     <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
-      <mat-list-item *ngFor="let link of navigation" [routerLinkActive]="link.link">
+      <mat-list-item *ngFor="let link of navigation" [routerLink]="link.link">
         <mat-icon>{{link.icon}}</mat-icon>
         <span class="label">{{link.label}}</span>
       </mat-list-item>
