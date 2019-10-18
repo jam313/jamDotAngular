@@ -1,0 +1,16 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <button mat-icon-button>
+      <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+    </button>
+    <h1>jamDotCom</h1>
+    <span class="menu-spacer"></span>
+    <div>
+      <a mat-button *ngFor="let link of navigation" [routerLinkActive]="link.link">{{link.label}}</a>
+    </div>
+  </mat-toolbar-row>
+
+  <mat-toolbar-row>
+    <span>A program a day make the doctor happy because you get really ill and become a repeat customer</span>
+  </mat-toolbar-row>
+</mat-toolbar>
